@@ -15,14 +15,14 @@ $( document ).ready(function() {
     for(let i = 0; i < gesTableData.length; i++){
         if(gesTableData[i].cells[4].innerText != ""){
             gesNotes.push({
-                coef: parseInt(gesTableData[i].cells[2].innerText),
-                note: parseInt(gesTableData[i].cells[4].innerText)
+                coef: parseFloat(gesTableData[i].cells[2].innerText),
+                note: parseFloat(gesTableData[i].cells[4].innerText)
             });
         }
         if(gesTableData[i].cells[5].innerText != ""){
             gesNotes.push({
-                coef: parseInt(gesTableData[i].cells[3].innerText),
-                note: parseInt(gesTableData[i].cells[5].innerText)
+                coef: parseFloat(gesTableData[i].cells[3].innerText),
+                note: parseFloat(gesTableData[i].cells[5].innerText)
             });
         }
     }

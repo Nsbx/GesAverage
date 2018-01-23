@@ -4,3 +4,6 @@ GesAverage est un userscript qui calcule votre moyenne générale et l'ajoute au
 ## Preview
 
 ![Preview](https://github.com/Nsbx/GesAverage/blob/master/preview.png "Preview")
+
+## Installation
+[Extension](http://tampermonkey.net/index.php) 

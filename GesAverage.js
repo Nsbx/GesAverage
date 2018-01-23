@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GESAverage
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/Nsbx/GesAverage
 // @version      0.1
 // @description  Add average in myges
 // @author       Nicolas Bondoux

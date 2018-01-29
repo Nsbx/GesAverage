@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         GESAverage
 // @namespace    https://github.com/Nsbx/GesAverage
+// @updateURL    https://raw.githubusercontent.com/Nsbx/GesAverage/master/GesAverage.js
 // @version      0.2
 // @description  Add average in myges
 // @author       Nicolas Bondoux

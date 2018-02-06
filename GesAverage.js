@@ -3,7 +3,7 @@
 // @namespace    https://github.com/Nsbx/GesAverage
 // @updateURL    https://raw.githubusercontent.com/Nsbx/GesAverage/master/GesAverage.js
 // @downloadURL  https://raw.githubusercontent.com/Nsbx/GesAverage/master/GesAverage.js
-// @version      0.2
+// @version      0.3
 // @description  Add average in myges
 // @author       Nicolas Bondoux
 // @match        https://www.myges.fr/student/marks
@@ -11,6 +11,15 @@
 // ==/UserScript==
 
 $( document ).ready(function() {
+    calculateAverage();
+    $('#marksForm select').change(function(){
+        setTimeout(function () {
+            calculateAverage();
+        }, 2000);
+    })
+});
+
+function calculateAverage(){
     gesTableBody = $('table[role="grid"]').find('tbody')[0];
     gesTableData = $(gesTableBody).find('tr');
     gesNotes = [];
@@ -45,7 +54,6 @@ $( document ).ready(function() {
         )
     )
     ;
-    console.log("GESAverage.js initialized");
-});
+}
 
 console.log("GESAverage.js loaded");
